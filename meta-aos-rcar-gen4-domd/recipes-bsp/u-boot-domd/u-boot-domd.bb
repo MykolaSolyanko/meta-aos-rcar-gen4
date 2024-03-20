@@ -13,11 +13,11 @@ do_configure[cleandirs] = "${B}"
 
 DEPENDS:append = " flex-native bison-native lzop-native srecord-native"
 
-UBOOT_URL = "git://github.com/xen-troops/u-boot.git"
-BRANCH = "zephyr_rcar_ipl_v2023.10"
+UBOOT_URL = "git://github.com/MykolaSolyanko/u-boot.git"
+BRANCH = "test_remove_bootargs"
 
 SRC_URI = "${UBOOT_URL};branch=${BRANCH};protocol=https"
-SRCREV = "${AUTOREV}"
+SRCREV = "931ed2ce6f3c892d0cc54da8157a96b8c112c896"
 PV = "v2020.10+git${SRCPV}"
 
 UBOOT_CONFIG = "rcar4_xen_defconfig"
